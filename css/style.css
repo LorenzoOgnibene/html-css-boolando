@@ -5,8 +5,12 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 .container{
-    width: 80%;
+    width: 75%;
     margin: 0 auto;
 }
 
@@ -19,28 +23,81 @@ header{
     height: 6rem;
     background-color: #ff6900;
     padding: 1.5rem;
+    box-shadow: 2px 2px #a19c99;
+    margin-bottom: 5rem;
+}
+
+a{
+    text-decoration: none;
+    color: white;
 }
 
 nav.header{
     align-items: center;
-    background-color: red;
     height: 3rem;
+ 
     
 }
 
 nav.header ul{
     flex-basis: 25%;
-    text-align: center;
+    text-align: left;
 }
 
 nav.header ul li{
     display: inline-block;
+    list-style-type: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-right: 1rem;
+    
 }
 
 div.bool-logo{
     flex-basis: 50%;
+    text-align: center;
+}
+
+div.bool-logo img{
+    width: 12rem;
 }
 
 div.user-feed{
     flex-basis: 25%;
+    text-align: right;
+    font-size: 1.7rem;
+    font-weight: bold;
+    margin-right: 1rem;
+    color: white;
+}
+
+
+.product{
+    display: inline-block;
+}
+
+figure img{
+    width: 90%;
+}
+
+figcaption{
+    font-size: 1.2rem;
+}
+
+span.prod-description{
+    font-size: 1.7rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+    display: block;
+}
+
+span.price{
+    font-size: 1.2rem;
+    color: red;
+    font-weight: bold;
+}
+
+span.old-price{
+    font-size: 1.2rem;
+    text-decoration: line-through;
 }
