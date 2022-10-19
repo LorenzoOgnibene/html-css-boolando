@@ -34,9 +34,7 @@ a{
 
 nav.header{
     align-items: center;
-    height: 3rem;
- 
-    
+    height: 3rem; 
 }
 
 nav.header ul{
@@ -50,7 +48,6 @@ nav.header ul li{
     font-size: 1.5rem;
     font-weight: bold;
     margin-right: 1rem;
-    
 }
 
 div.bool-logo{
@@ -75,9 +72,10 @@ div.user-feed{
 .product{
     display: inline-block;
     position: relative;
+    width: calc((100% / 3) - 2rem);
 }
 
-figure img{
+div.pd-image img{
     width: 90%;
 }
 
