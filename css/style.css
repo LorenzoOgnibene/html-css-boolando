@@ -26,7 +26,7 @@ header{
     box-shadow: 2px 2px #a19c99;
     margin-bottom: 5rem;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
 }
 
 a{
@@ -56,7 +56,6 @@ nav.header ul{
 li{
     display: inline-block;
     list-style-type: none;
-    /* font-size: 1.5rem; */
     font-weight: bold;
     margin-right: 1rem;
 }
@@ -75,8 +74,12 @@ div.user-feed{
     text-align: right;
     font-size: 1.7rem;
     font-weight: bold;
-    margin-right: 1rem;
+    padding-right: 4rem;
     color: white;
+}
+
+.user-feed span{
+    margin-right: .5rem;
 }
 
 section.products-row{
@@ -107,6 +110,7 @@ span.sale{
     color: white;
     background-color: red;
     padding: .2rem .5rem;
+    z-index: 1;
 }
 
 span.eco{
@@ -118,6 +122,7 @@ span.eco{
     color: white;
     background-color: #008000;
     padding: .2rem .5rem;
+    z-index: 1;
 }
 
 .eco-all-left{
@@ -129,6 +134,7 @@ span.eco{
     color: white;
     background-color: #008000;
     padding: .2rem .5rem;
+    z-index: 1;
 }
 
 span.favurite{
@@ -138,6 +144,7 @@ span.favurite{
     font-size: 2.5rem;
     background-color: white;
     padding: 0.5rem 1.2rem;
+    z-index: 1;
 }
 
 span.prod-description{
@@ -192,4 +199,22 @@ div.social h4{
    background-color: #ffffff; 
    font-size: 1.5rem;
    margin-left: 0.5rem;
+}
+
+/* SECOND VIEW WITH HOVER */
+
+img.second-view{
+    display: none;
+}
+
+article.product:hover .second-view{
+    display:block;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+.favurite:hover{
+    color: red;
 }
