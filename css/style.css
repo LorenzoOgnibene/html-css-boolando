@@ -25,12 +25,22 @@ header{
     padding: 1.5rem;
     box-shadow: 2px 2px #a19c99;
     margin-bottom: 5rem;
+    position: fixed;
+    z-index: 1;
 }
 
 a{
     text-decoration: none;
     color: white;
 }
+
+li{
+    display: inline-block;
+    list-style-type: none;
+    font-weight: bold;
+    margin-right: 1rem;
+}
+
 
 nav.header{
     align-items: center;
@@ -40,12 +50,13 @@ nav.header{
 nav.header ul{
     flex-basis: 25%;
     text-align: left;
+    font-size: 1.5rem;
 }
 
-nav.header ul li{
+li{
     display: inline-block;
     list-style-type: none;
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
     font-weight: bold;
     margin-right: 1rem;
 }
@@ -68,16 +79,21 @@ div.user-feed{
     color: white;
 }
 
+section.products-row{
+    margin-bottom: 4rem;
+    padding-top: 11rem;
+}
 
 .product{
     display: inline-block;
     position: relative;
-    width: calc((100% / 3) - 2rem);
+    width: 32%;
 }
 
 div.pd-image img{
-    width: 90%;
-}
+    width: 37.5rem
+} 
+
 
 figcaption{
     font-size: 1.2rem;
@@ -104,10 +120,21 @@ span.eco{
     padding: .2rem .5rem;
 }
 
+.eco-all-left{
+    position: absolute;
+    bottom: 15%;
+    left: 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    background-color: #008000;
+    padding: .2rem .5rem;
+}
+
 span.favurite{
     position: absolute;
     top: 1%;
-    right: 10%;
+    right: 1%;
     font-size: 2.5rem;
     background-color: white;
     padding: 0.5rem 1.2rem;
@@ -129,4 +156,40 @@ span.price{
 span.old-price{
     font-size: 1.2rem;
     text-decoration: line-through;
+}
+
+footer{
+    height: 8rem;
+    background-color: #1a1a1a;
+}
+
+div.aside{
+    flex-basis: 80%;
+}
+
+div.social{
+    flex-basis: 20%;
+}
+
+div.aside h3{
+    font-size: 2rem;
+    color: white;
+    margin: 1rem 0;
+}
+
+div.aside ul li{
+    font-size: 1.2rem;
+}
+
+div.social h4{
+    font-size: 1.5rem;
+    color: white;
+    margin: 1rem 0;
+}
+
+.fa-brands{
+    color: #1a1a1a;
+   background-color: #ffffff; 
+   font-size: 1.5rem;
+   margin-left: 0.5rem;
 }
